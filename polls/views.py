@@ -18,7 +18,7 @@ class IndexView(generic.ListView):
         """
         return Question.objects.filter(
             pub_date__lte=timezone.now()
-        ).order_by('-pub_date')[:10]
+        ).order_by('-pub_date')[:15]
 
 
 class DetailView(generic.DetailView):
